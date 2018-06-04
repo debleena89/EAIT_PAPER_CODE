@@ -1,0 +1,113 @@
+\section{Problem statement and Motivating Example} \label{sec3}
+\noindent
+
+\textcolor{red}{To explain our problem we are considerig a system consisting of many control
+applications. Each of these control applications is partitioned into a set of
+tasks. Each of these tasks are mapped onto different processors. These tasks 
+of the controllers communicates via shared buses. The tasks on each processors
+are scheduling using a given scheduling policy. The messages on the shared buses
+are also scheduled using a given arbitration policy.}
+
+\textcolor{red}{ will use the term platform to refer to such an (i) architecture (ii) the 
+different scheduling and arbitration policies used. }
+
+\textcolor{red}{ let us consider two control applications control loop1 and control loop2.
+Control loop1 performs two tasks $T_1$ and $T_2$, where $T_1$ and $T_2$ mapped onto 
+different processors. $T_1$ for example can be a sensor task and $T_2$ can be a controller 
+task. $T_1$ and $T_2$ communicate via a message stream M, consisting of an infinite sequence 
+of message instances $m_1$, $m_2$, .... $T_3$ is another task from control loop2. Assuming 
+that $T_1$, $T_2$, and $T_3$ senses at a constant periodic rate. The two control loops are 
+reresented by finite state diagram as in Fig.1 }
+ 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=3.0in]{diagram.pdf}
+\end{center}
+\vspace{-0.1in}
+\caption{{\em Control Loops sharing bus}}
+\label{fig:automaton}
+\end{figure}
+
+In the above diagram, the controllers are represented by state diagram. 
+There are 6 states in control loop1, among them only $q_2$ 
+and $q_3$ are sharing the bus. In control loop2, there are 4 states, and among them
+only one state $p_0$ is sharing the bus. So this common bus will be shared by only
+these three states. All these three states will access the bus channel in Time-Division 
+multiple access method under certain schedulable constraint. 
+
+The bus access by these states can be thought of as an infinite tree, whose nodes 
+are the states of the controlling automata which are sharing the bus and
+each path of the tree gives a particular scheduling sequence. To model the problem,
+we have considered a finite length tree say, length of the tree is 3. The leaf node of the tree
+gives the possible scheduling sequences with these states.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=3.5in]{tree_automata.pdf}
+\end{center}
+\vspace{-0.1in}
+\caption{{\em Tree automata for scheduling sequence }}
+\label{fig:automaton}
+\end{figure}
+
+The scheduling sequence construct the states for the finite state machine. After adding
+each participating states with the states of finite state machine, we want to get a cycle from
+thses states. After getting the cycles we found that all of the participating states are
+present in the omega regular expression extracted from this cycle.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1.5in]{cycle_1.pdf}
+\end{center}
+\vspace{-0.1in}
+\caption{{\em Cycle construction on FSM }}
+\label{fig:automaton}
+\end{figure}
+
+
+The obtained omega Regular expression from the above transition is $(p_0q_2q_3)^\omega$.
+
+Let us consider that control loop1 is replaced, $q_2$ and $q_3$ are not sharing the bus now.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=3.0in]{diagram_replaced.pdf}
+\end{center}
+\vspace{-0.1in}
+\caption{{\em Control loop 1 got modified }}
+\label{fig:automaton}
+\end{figure}
+
+In the above diagram, $q_2$ and $q_3$ from control loop1 are not sharing the bus, only $p_0$ is 
+sharing the bus from control loop2. The tree automata only for $p_0$  state will look like:
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=5mm]{diagram_single_state.pdf}
+\end{center}
+\vspace{-0.1in}
+\caption{{\em Tree automata for scheduling after control loop 1 got modified }}
+\label{fig:automaton}
+\end{figure}
+
+In the above diagram, $q_2$ and $q_3$ from control loop1 are not sharing the bus, only
+$p_0$ is sharing the bus from control loop2. After constructing the tree automata for
+single state as depicted in Fig.5, we get a single sceduling sequence $p_0p_0p_0$ .
+Only one transition is possible here:
+The omega Regular expression obtained from this transition is $(p_0)^\omega$ . In this
+expression we obtain only a single state $p_0$ , belongs to control loop2. But there
+are no states from control loop1. In this situation we can say that code replacement attack
+has taken place.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1.0in]{one_state.pdf}
+\end{center}
+\vspace{-0.1in}
+\caption{{\em Cycle construction on one state of FSM}}
+\label{fig:automaton}
+\end{figure}
+
+
+

@@ -1,0 +1,125 @@
+\section{Problem statement and Motivating Example} \label{sec3}
+\noindent
+% A discrete time switched linear system is modeled by a finite set of real 
+% $n \times n$ matrices $ \sum = \{A_i\}_{i \in I}$, $|I|$ $<$ $\infty $, as defined in~\cite{AlurW08}. 
+% Infinite words $\sigma = I^\omega$ are used to describe control schedules. 
+% Given a schedule $\sigma \in I^\omega$, and an initial state $x_0$ $\in$ 
+% $\mathbb{R}^n$, the dynamics of the system is given by:
+% 
+% \begin{center}
+%        \textcolor{black}{ $x_{k+1} = A_{\sigma_k} x_k$ }
+% \end{center}
+%\textbf{Problem definition of the problem:}
+For a discrete-time  linear time invariant system as above, we assume we are given 
+a set of $n$ controllers $ A = { {A_1}, {A_2}, ....{A_n}} $, each represented 
+with the dynamics of its control actions specified with individual transition matrices. As discussed before,  
+a control schedule is modeled as an interleaving of these control actions with the plant dynamics, as specified 
+in the transition matrices. A control schedule is considered exponentially stable, if the composition of the plant and the controllers entail a non-empty language. 
+As discussed in the previous section, the language of exponential stability is 
+B\"{u}chi-recognizable. Formally, we are given the following:
+
+\begin{itemize}
+ \item We are given a plant ${\cal P}$, specified, as in Section~\ref{sec2}.
+ \item We have  a set of $n$ control actions $A_1, A_2, \ldots A_n$ for $n$ controllers.
+ \item A stability computation window length $L$ and a stability margin 
+$\rho$ for $(L, \rho)$ exponential stability.
+ \item A modified set of controllers $A'_1, A'_2, \ldots A'_n$, possibly resulting out of code replacement attacks. The two sets $A_1, A_2, \ldots A_n$ 
+       and $A'_1, A'_2, \ldots A'_n$ differ in at least one $i$ (1 $\leq$ $i$ $\leq$ n).
+%  \item For $L$ length scheduling sequence there will be possible $ n^L $ combinations.
+%  \item Only exponentially stable sequence will be considered. Exponential stability$(L,\rho)$ 
+%        computed for $L$ length sequence.
+%  \item To construct a B\"{u}chi automaton with these stable states.   
+\end{itemize}
+
+\noindent
+{\bf Objective:} 
+Our objective is to develop an automatic framework for analyzing the effect of the modified set of controllers on the schedulability of the system as far as the 
+exponential stability criterion is considered.
+We assume that the original system is schedulable, and there indeed exists a scheduler that can ensure that the system resulting out of the composition of the 
+plant and the original set of controllers is exponentially stable. 
+ If the system resulting out of 
+the combination of the plant and the modified set of controllers does not 
+remain schedulable, we conclude that the system has been subject to a code replacement attack. We follow the same prescription for schedulability analysis, as given in~\cite{GhoshMDHD16}. %for schedulability analysis.    
+%        If a B\"{u}chi Automaton cannot be constructed with these stable states, 
+%        then it will be concluded that at least one of the control actions has been 
+%        attacked, otherwise these stable states would \textcolor{red}{have Resulted} into a B\"{u}chi Automaton
+%        which possess at least one cycle over the states.
+The following example illustrates the philosophy. 
+     
+We consider a discrete-time switched linear system having
+three control actions ${A_0, A_1, A_2}$ each specified by $2$ $\times$ $2$ matrices. Let us consider the stability computation window length is $4$, i.e., $\sigma = { \sigma_1, \sigma_2, 
+\sigma_3, \sigma_4}$. So possible number of schedules for this scenario is $3^4$ = $81$.  
+But all these schedules do not result into an exponentially stable state. 
+% From all 
+% possible states some states will be filtered out to guarantee exponential stability, 
+% say $z$ number of states are stable among these $81$ states. Now, adding all possible
+% transitions on these $z$ states will get a finite state machine. If a cycle can be 
+% obtained from this state transitions, it will signify that this resulting automaton
+% is a B\"{u}chi automaton and the string obtained from the cycle is $\omega$-regular. 
+% A schedulable sequences of control actions is a $\omega$-regular string which 
+% guarantees that the chosen set of schedules for the control actions.
+% 
+% 
+% \noindent
+% The above idea is captured to detect code replacement attack on such a 
+% discrete-time switched linear system. In this work we have tried to illustrate an idea
+% that if a control action is hijacked then the system will not remain schedulable, i.e.,  
+% the states cannot form B\"{u}chi automaton.
+Let us consider the following three control actions:
+
+   $A_0 = ([2.0, -1.75],[2.0, -2.0])$
+   
+   $A_1 = ([0.25, 1.75],[0.25, -0.25])$
+
+   $A_2 = ([0.5, 1.85],[0.5, -0.5])$
+   
+\noindent
+Assuming a stability margin of 0.5, we can easily verify that among the possible $81$ states, only $14$ states are stable, and the automaton formed
+with these states contains cycles. This means the control actions are schedulable.
+
+%\vspace{-0.1 in}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=90mm, height=20mm]{schedulable_new.pdf}
+\end{center}
+%\vspace{-0.1in}
+\caption{{\em Automaton construction with stable states}}
+\label{fig:cycle found}
+\end{figure}
+
+
+\noindent
+We now consider another set of control actions:
+   
+   $A_0 = ([2.0, -1.75],[2.0, -2.0])$
+   
+   $A_1 = ([1.65, -2.5],[1.66, 1.0])$
+
+   $A_2 = ([0.5, 1.85],[0.5, -0.5])$
+   
+%\vspace{-0.1 in}
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=10mm, height = 10mm]{non_schedulable.pdf}
+\end{center}
+%\vspace{-0.1in}
+\caption{{\em  Only one state found}}
+\label{fig:Only one state}
+\end{figure}
+
+\noindent
+In this case, among the possible $81$ states, only $1$ state is stable. A cycle cannot be obtained 
+from this state, which results in a non-schedulable control action.
+In the modified controller set, only $A_1$ has been changed from the previous 
+set of control actions, the other 
+two control actions remain the same. As we see from above, the loss of exponential stability can be a useful indicator for concluding that code replacement attacks have been carried out on a given system. This is the problem setting addressed in this paper.
+
+
+% \subsection{Future Scope}
+% \noindent
+% In lieu of the scalability issue with model based assertion verification methods, dynamic assertion based verification techniques are inevitable to follow for software verification sign-off. Hence, we see to extend the proposed frame work to employ a mechanism for the generation of minimal subset of test suites that cover all the user specified assertions and subsequently use this framework to complete the testing process. 
+%\vspace{-0.2 in}
+
+
+

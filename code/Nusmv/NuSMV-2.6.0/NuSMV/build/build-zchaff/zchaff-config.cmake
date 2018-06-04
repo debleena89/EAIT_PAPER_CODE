@@ -1,0 +1,5 @@
+set(ZCHAFF_INCLUDE_DIR "/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/build-zchaff/zchaff64")
+set(ZCHAFF_COMPILE_FLAGS "")
+set(ZCHAFF_LINK_FLAGS "")
+set(ZCHAFF_LINK_LIBRARIES "")
+set(ZCHAFF_LIB "/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/build-zchaff/zchaff64/libsat.a")

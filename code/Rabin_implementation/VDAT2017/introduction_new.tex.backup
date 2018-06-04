@@ -1,0 +1,75 @@
+\section{Introduction} \label{sec:intro}
+\noindent
+
+The focus of study in this paper is code replacement attacks, wherein some or parts of a
+control component 
+are compromised by tampering their operational modality 
+by modifying the software running inside. 
+Code replacement \cite{GhoshHD12} by internal employees, phishing attacks or other means of 
+code injection have been known to be a vector for cyber-attacks for a while. Stuxnet 
+analysis showed that such attacks were part of the repertoire in that case. In an 
+industrial control environment with real time control components, code replacement can
+lead to disaster, for example, slowing down a particular process in the industrial
+manufacturing can cascade a chain of failures in the whole assembly line. 
+In this paper, we propose an idea that will demonstrate that such
+attacks for real-time SCADA systems can be guarded against by statically analyzing the
+legitimate control programs, and constructing an omega-regular language based timing signature,
+which can then be periodically checked on the running components to distinguish a replaced
+component from the original component. The timing signature analysis of omega-regular languages 
+was originally proposed by researchers in \cite{WeissFAA09}, in the context of real-time 
+communication scheduling in SCADA systems. In this paper, we plan to take the idea further 
+for addressing the problem of guarding against code replacement attacks on real-time 
+control systems. Given a set of control components, a control objective 
+to be satisfied by the control ensemble, the question of schedulability and 
+synthesis of a scheduler that can ensure the desired control performance has been
+recently studied in literature~\cite{WeissFAA09, AlurW08, GhoshMDHD16}. 
+In this paper, we extend the same philosophy to build an automata theoretic
+framework for assessment of code replacement attacks on schedulability.
+
+
+This paper presents an idea to detect the code replacement attack over a system
+where several control applications are sharing a common bus to access common resources 
+like CPU. The control applications communinicate with rest of the system via this shared 
+bus by sending and receiving data. Each of the applications can access the bus for a
+particular period of time. We will not consider any deadline or any upperbound on the 
+period. The control applications participate in accessing the resources staisfying the
+performance stability of the system. If there are $n$ number of control applications then
+at least one task from each of the applications should share the bus. If we consider that
+$n + k$ number of tasks are sharing the bus then after meeting the performaqance requirement
+of the system there should at least be $n$ number states present.
+
+In this work we proposed to meet the performance requirement of the system with Rabin's
+acceptance condition. The control applications are expressed with Finite state automata for 
+better understanding of the system and performance. We have used finite automata over 
+infinite words to address the scheduling sequences for a particular task over 
+a particular slot. At a particular instant only one task can share the bus. How a bus
+can be shared over some tasks can be formally stated by an infinite word $\sigma = 
+\sigma_1 \sigma_2 \dots$, here each $\sigma_i$ represents the particular task at
+$i^{th}$ slot. All such infinite words for a particular systems give the set of possible scheduling
+sequences. We have used infinite tree automata to obtain all such possible sequences. The 
+number of child node a parent node can have depends on number of tasks participating in common 
+shared bus access. Based on the number of child nodes and depth, the paths of the 
+tree will be formed. Each path of the tree represents one possible scheduling sequences
+for bus access. Among al such sequences, those who satisfy performance requirement 
+of the system are considered as a stable sequence.
+
+we have considered Rabin's acceptance condition as a stability metric of performance.
+Some of the states from each control application are sharing the bus. Through Rabin's
+acceptance condition we can specify that which states will access the bus infinitely often
+and which will not be present in the infinite set. In other related work \cite{WeissA07},
+\cite{AlurW08}, \cite{WeissFAA09}, \cite{GhoshMDHD16} we can see that in their work,
+exponential stability was calculated as performance objective. We found that 
+expoenetial stability depends on the length of the sequence. With varying length the 
+stability parameter also varies. But Rabin's acceptance condition does not vary with
+sequence length, which can make the system more robust. In this work, Rabin's tree
+acceptance condition is applied on infinite tree automata to satisfy the performance
+requiremnet.
+
+
+This paper is organized as follows. Section \ref{sec2} describes the background theory
+for this work, while Section \ref{sec3} formally defines our problem statement.
+Section \ref{sec4} presents the solution architecture. In the following discussion,
+Sections \ref{sec5} and \ref{sec6} present some illustrative examples and experiments
+respectively. Section \ref{sec7} concluded this discussion.
+
+

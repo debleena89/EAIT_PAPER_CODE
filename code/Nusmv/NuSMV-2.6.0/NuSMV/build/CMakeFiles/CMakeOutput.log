@@ -1,0 +1,1230 @@
+The system is: Linux - 3.13.0-32-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2449475362/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2449475362.dir/build.make CMakeFiles/cmTryCompileExec2449475362.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2449475362.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2449475362.dir/testCCompiler.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec2449475362
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2449475362.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2449475362.dir/testCCompiler.c.o  -o cmTryCompileExec2449475362 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec861404339/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec861404339.dir/build.make CMakeFiles/cmTryCompileExec861404339.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec861404339.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec861404339.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec861404339
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec861404339.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTryCompileExec861404339.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec861404339 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.3' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec861404339' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec861404339 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec861404339.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec861404339/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec861404339.dir/build.make CMakeFiles/cmTryCompileExec861404339.dir/build]
+  ignore line: [make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec861404339.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec861404339.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec861404339]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec861404339.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec861404339.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec861404339 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.3' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec861404339' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec861404339 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec861404339.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec861404339] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
+    arg [CMakeFiles/cmTryCompileExec861404339.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3549642482/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3549642482.dir/build.make CMakeFiles/cmTryCompileExec3549642482.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3549642482.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3549642482.dir/testCXXCompiler.cxx.o -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec3549642482
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3549642482.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec3549642482.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec3549642482 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec496831129/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec496831129.dir/build.make CMakeFiles/cmTryCompileExec496831129.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec496831129.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec496831129.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec496831129
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec496831129.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTryCompileExec496831129.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec496831129 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.3' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec496831129' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec496831129 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec496831129.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec496831129/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec496831129.dir/build.make CMakeFiles/cmTryCompileExec496831129.dir/build]
+  ignore line: [make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec496831129.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec496831129.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec496831129]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec496831129.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec496831129.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec496831129 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.3' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec496831129' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec496831129 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec496831129.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec496831129] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
+    arg [CMakeFiles/cmTryCompileExec496831129.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8] ==> [/usr/lib/gcc/x86_64-linux-gnu/4.8]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec502671794/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec502671794.dir/build.make CMakeFiles/cmTryCompileExec502671794.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec502671794.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec502671794.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec502671794
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec502671794.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec502671794.dir/CheckIncludeFile.c.o  -o cmTryCompileExec502671794 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3047764725/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3047764725.dir/build.make CMakeFiles/cmTryCompileExec3047764725.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3047764725.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3047764725.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3047764725
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3047764725.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3047764725.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3047764725 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3039421214/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3039421214.dir/build.make CMakeFiles/cmTryCompileExec3039421214.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3039421214.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3039421214.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3039421214
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3039421214.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3039421214.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3039421214 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of int passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2267366538/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2267366538.dir/build.make CMakeFiles/cmTryCompileExec2267366538.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2267366538.dir/_int_size.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2267366538.dir/_int_size.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CheckTypeSize/_int_size.c
+Linking C executable cmTryCompileExec2267366538
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2267366538.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2267366538.dir/_int_size.c.o  -o cmTryCompileExec2267366538 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of long int passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1028408910/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1028408910.dir/build.make CMakeFiles/cmTryCompileExec1028408910.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1028408910.dir/_long_size.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1028408910.dir/_long_size.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CheckTypeSize/_long_size.c
+Linking C executable cmTryCompileExec1028408910
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1028408910.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1028408910.dir/_long_size.c.o  -o cmTryCompileExec1028408910 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of void * passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3997618347/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3997618347.dir/build.make CMakeFiles/cmTryCompileExec3997618347.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3997618347.dir/_voidp_size.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3997618347.dir/_voidp_size.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CheckTypeSize/_voidp_size.c
+Linking C executable cmTryCompileExec3997618347
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3997618347.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3997618347.dir/_voidp_size.c.o  -o cmTryCompileExec3997618347 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test _have_funcattr_noreturn succeded with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3245367878/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3245367878.dir/build.make CMakeFiles/cmTryCompileExec3245367878.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3245367878.dir/src.c.o
+/usr/bin/cc   -D_have_funcattr_noreturn   -o CMakeFiles/cmTryCompileExec3245367878.dir/src.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c
+/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c: In function ‘f’:
+/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c:2:5: warning: ‘noreturn’ function does return [enabled by default]
+     __attribute__ ((noreturn)) void f(void) {}
+     ^
+Linking C executable cmTryCompileExec3245367878
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3245367878.dir/link.txt --verbose=1
+/usr/bin/cc   -D_have_funcattr_noreturn    CMakeFiles/cmTryCompileExec3245367878.dir/src.c.o  -o cmTryCompileExec3245367878 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+    __attribute__ ((noreturn)) void f(void) {}
+
+    int main(void)
+    {
+        f();
+        return 0;
+    }
+    
+Performing C SOURCE FILE Test _have_funcattr_warn_unused_result succeded with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3575327027/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3575327027.dir/build.make CMakeFiles/cmTryCompileExec3575327027.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3575327027.dir/src.c.o
+/usr/bin/cc   -D_have_funcattr_warn_unused_result   -o CMakeFiles/cmTryCompileExec3575327027.dir/src.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c
+/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c:6:10: warning: ignoring return value of ‘f’, declared with attribute warn_unused_result [-Wunused-result]
+         f(1);
+          ^
+Linking C executable cmTryCompileExec3575327027
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3575327027.dir/link.txt --verbose=1
+/usr/bin/cc   -D_have_funcattr_warn_unused_result    CMakeFiles/cmTryCompileExec3575327027.dir/src.c.o  -o cmTryCompileExec3575327027 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+    __attribute__ ((__warn_unused_result__)) int f(int i) { return i; }
+
+    int main(void)
+    {
+        f(1);
+        return 0;
+    }
+    
+Performing C SOURCE FILE Test HAVE_MALLOC succeded with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2618702202/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2618702202.dir/build.make CMakeFiles/cmTryCompileExec2618702202.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2618702202.dir/src.c.o
+/usr/bin/cc   -DHAVE_MALLOC   -o CMakeFiles/cmTryCompileExec2618702202.dir/src.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c
+/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c:2:15: warning: conflicting types for built-in function ‘malloc’ [enabled by default]
+         char *malloc();
+               ^
+Linking C executable cmTryCompileExec2618702202
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2618702202.dir/link.txt --verbose=1
+/usr/bin/cc   -DHAVE_MALLOC    CMakeFiles/cmTryCompileExec2618702202.dir/src.c.o  -o cmTryCompileExec2618702202 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+
+        char *malloc();
+
+        int main(void)
+        {
+            return (!malloc(0));
+        }
+        
+Determining if the include file malloc.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3390274476/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3390274476.dir/build.make CMakeFiles/cmTryCompileExec3390274476.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3390274476.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3390274476.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3390274476
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3390274476.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3390274476.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3390274476 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file dirent.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec199598199/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec199598199.dir/build.make CMakeFiles/cmTryCompileExec199598199.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec199598199.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec199598199.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec199598199
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec199598199.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec199598199.dir/CheckIncludeFile.c.o  -o cmTryCompileExec199598199 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3149976132/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3149976132.dir/build.make CMakeFiles/cmTryCompileExec3149976132.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3149976132.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3149976132.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3149976132
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3149976132.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3149976132.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3149976132 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file errno.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4151885266/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4151885266.dir/build.make CMakeFiles/cmTryCompileExec4151885266.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4151885266.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4151885266.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec4151885266
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4151885266.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec4151885266.dir/CheckIncludeFile.c.o  -o cmTryCompileExec4151885266 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file float.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4206211808/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4206211808.dir/build.make CMakeFiles/cmTryCompileExec4206211808.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4206211808.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4206211808.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec4206211808
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4206211808.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec4206211808.dir/CheckIncludeFile.c.o  -o cmTryCompileExec4206211808 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file fnmatch.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3644599868/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3644599868.dir/build.make CMakeFiles/cmTryCompileExec3644599868.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3644599868.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3644599868.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3644599868
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3644599868.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3644599868.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3644599868 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec207212397/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec207212397.dir/build.make CMakeFiles/cmTryCompileExec207212397.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec207212397.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec207212397.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec207212397
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec207212397.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec207212397.dir/CheckIncludeFile.c.o  -o cmTryCompileExec207212397 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1002451766/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1002451766.dir/build.make CMakeFiles/cmTryCompileExec1002451766.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1002451766.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1002451766.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1002451766
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1002451766.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1002451766.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1002451766 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec46419476/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec46419476.dir/build.make CMakeFiles/cmTryCompileExec46419476.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec46419476.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec46419476.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec46419476
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec46419476.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec46419476.dir/CheckIncludeFile.c.o  -o cmTryCompileExec46419476 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file regex.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3310487811/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3310487811.dir/build.make CMakeFiles/cmTryCompileExec3310487811.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3310487811.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3310487811.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3310487811
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3310487811.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3310487811.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3310487811 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file signal.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1393640844/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1393640844.dir/build.make CMakeFiles/cmTryCompileExec1393640844.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1393640844.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1393640844.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1393640844
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1393640844.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1393640844.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1393640844 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdbool.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3359811098/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3359811098.dir/build.make CMakeFiles/cmTryCompileExec3359811098.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3359811098.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3359811098.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3359811098
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3359811098.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3359811098.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3359811098 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1908415956/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1908415956.dir/build.make CMakeFiles/cmTryCompileExec1908415956.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1908415956.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1908415956.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1908415956
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1908415956.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1908415956.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1908415956 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec606360122/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec606360122.dir/build.make CMakeFiles/cmTryCompileExec606360122.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec606360122.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec606360122.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec606360122
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec606360122.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec606360122.dir/CheckIncludeFile.c.o  -o cmTryCompileExec606360122 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec7362119/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec7362119.dir/build.make CMakeFiles/cmTryCompileExec7362119.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec7362119.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec7362119.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec7362119
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec7362119.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec7362119.dir/CheckIncludeFile.c.o  -o cmTryCompileExec7362119 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/dir.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1852429157/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1852429157.dir/build.make CMakeFiles/cmTryCompileExec1852429157.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1852429157.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1852429157.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1852429157
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1852429157.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1852429157.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1852429157 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/ioctl.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2057904252/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2057904252.dir/build.make CMakeFiles/cmTryCompileExec2057904252.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2057904252.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2057904252.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2057904252
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2057904252.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2057904252.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2057904252 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/param.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2205983062/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2205983062.dir/build.make CMakeFiles/cmTryCompileExec2205983062.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2205983062.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2205983062.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2205983062
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2205983062.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2205983062.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2205983062 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/resource.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3249142807/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3249142807.dir/build.make CMakeFiles/cmTryCompileExec3249142807.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3249142807.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3249142807.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3249142807
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3249142807.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3249142807.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3249142807 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/signal.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1846157244/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1846157244.dir/build.make CMakeFiles/cmTryCompileExec1846157244.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1846157244.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1846157244.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1846157244
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1846157244.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1846157244.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1846157244 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1059629910/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1059629910.dir/build.make CMakeFiles/cmTryCompileExec1059629910.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1059629910.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1059629910.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1059629910
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1059629910.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1059629910.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1059629910 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec927545855/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec927545855.dir/build.make CMakeFiles/cmTryCompileExec927545855.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec927545855.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec927545855.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec927545855
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec927545855.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec927545855.dir/CheckIncludeFile.c.o  -o cmTryCompileExec927545855 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1841650840/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1841650840.dir/build.make CMakeFiles/cmTryCompileExec1841650840.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1841650840.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1841650840.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1841650840
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1841650840.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1841650840.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1841650840 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function getenv exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2386844803/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2386844803.dir/build.make CMakeFiles/cmTryCompileExec2386844803.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2386844803.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getenv   -o CMakeFiles/cmTryCompileExec2386844803.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2386844803
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2386844803.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getenv    CMakeFiles/cmTryCompileExec2386844803.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2386844803 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function getpid exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2779918109/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2779918109.dir/build.make CMakeFiles/cmTryCompileExec2779918109.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2779918109.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getpid   -o CMakeFiles/cmTryCompileExec2779918109.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2779918109
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2779918109.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getpid    CMakeFiles/cmTryCompileExec2779918109.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2779918109 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function isatty exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1469891438/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1469891438.dir/build.make CMakeFiles/cmTryCompileExec1469891438.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1469891438.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=isatty   -o CMakeFiles/cmTryCompileExec1469891438.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1469891438
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1469891438.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=isatty    CMakeFiles/cmTryCompileExec1469891438.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1469891438 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function memmove exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1142064026/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1142064026.dir/build.make CMakeFiles/cmTryCompileExec1142064026.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1142064026.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memmove   -o CMakeFiles/cmTryCompileExec1142064026.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘memmove’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec1142064026
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1142064026.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memmove    CMakeFiles/cmTryCompileExec1142064026.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1142064026 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function memset exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec654569193/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec654569193.dir/build.make CMakeFiles/cmTryCompileExec654569193.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec654569193.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memset   -o CMakeFiles/cmTryCompileExec654569193.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘memset’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec654569193
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec654569193.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memset    CMakeFiles/cmTryCompileExec654569193.dir/CheckFunctionExists.c.o  -o cmTryCompileExec654569193 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function mkstemp exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1808144661/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1808144661.dir/build.make CMakeFiles/cmTryCompileExec1808144661.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1808144661.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mkstemp   -o CMakeFiles/cmTryCompileExec1808144661.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1808144661
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1808144661.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mkstemp    CMakeFiles/cmTryCompileExec1808144661.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1808144661 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function mktemp exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec403203974/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec403203974.dir/build.make CMakeFiles/cmTryCompileExec403203974.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec403203974.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mktemp   -o CMakeFiles/cmTryCompileExec403203974.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec403203974
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec403203974.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mktemp    CMakeFiles/cmTryCompileExec403203974.dir/CheckFunctionExists.c.o  -o cmTryCompileExec403203974 -rdynamic 
+CMakeFiles/cmTryCompileExec403203974.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function popen exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1217826255/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1217826255.dir/build.make CMakeFiles/cmTryCompileExec1217826255.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1217826255.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=popen   -o CMakeFiles/cmTryCompileExec1217826255.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1217826255
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1217826255.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=popen    CMakeFiles/cmTryCompileExec1217826255.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1217826255 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function random exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec274776116/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec274776116.dir/build.make CMakeFiles/cmTryCompileExec274776116.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec274776116.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=random   -o CMakeFiles/cmTryCompileExec274776116.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec274776116
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec274776116.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=random    CMakeFiles/cmTryCompileExec274776116.dir/CheckFunctionExists.c.o  -o cmTryCompileExec274776116 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function realloc exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2911218190/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2911218190.dir/build.make CMakeFiles/cmTryCompileExec2911218190.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2911218190.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=realloc   -o CMakeFiles/cmTryCompileExec2911218190.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘realloc’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec2911218190
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2911218190.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=realloc    CMakeFiles/cmTryCompileExec2911218190.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2911218190 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function setvbuf exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1245134111/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1245134111.dir/build.make CMakeFiles/cmTryCompileExec1245134111.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1245134111.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=setvbuf   -o CMakeFiles/cmTryCompileExec1245134111.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1245134111
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1245134111.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=setvbuf    CMakeFiles/cmTryCompileExec1245134111.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1245134111 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function srandom exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2213232749/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2213232749.dir/build.make CMakeFiles/cmTryCompileExec2213232749.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2213232749.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=srandom   -o CMakeFiles/cmTryCompileExec2213232749.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2213232749
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2213232749.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=srandom    CMakeFiles/cmTryCompileExec2213232749.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2213232749 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strcasecmp exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2616091366/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2616091366.dir/build.make CMakeFiles/cmTryCompileExec2616091366.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2616091366.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strcasecmp   -o CMakeFiles/cmTryCompileExec2616091366.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘strcasecmp’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec2616091366
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2616091366.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strcasecmp    CMakeFiles/cmTryCompileExec2616091366.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2616091366 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strchr exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3363818676/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3363818676.dir/build.make CMakeFiles/cmTryCompileExec3363818676.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3363818676.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strchr   -o CMakeFiles/cmTryCompileExec3363818676.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘strchr’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec3363818676
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3363818676.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strchr    CMakeFiles/cmTryCompileExec3363818676.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3363818676 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strrchr exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1650529181/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1650529181.dir/build.make CMakeFiles/cmTryCompileExec1650529181.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1650529181.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strrchr   -o CMakeFiles/cmTryCompileExec1650529181.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘strrchr’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec1650529181
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1650529181.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strrchr    CMakeFiles/cmTryCompileExec1650529181.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1650529181 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strstr exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4001436190/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4001436190.dir/build.make CMakeFiles/cmTryCompileExec4001436190.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4001436190.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strstr   -o CMakeFiles/cmTryCompileExec4001436190.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘strstr’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec4001436190
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4001436190.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strstr    CMakeFiles/cmTryCompileExec4001436190.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4001436190 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strtod exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1054968497/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1054968497.dir/build.make CMakeFiles/cmTryCompileExec1054968497.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1054968497.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtod   -o CMakeFiles/cmTryCompileExec1054968497.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1054968497
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1054968497.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtod    CMakeFiles/cmTryCompileExec1054968497.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1054968497 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strtol exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec108784321/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec108784321.dir/build.make CMakeFiles/cmTryCompileExec108784321.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec108784321.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtol   -o CMakeFiles/cmTryCompileExec108784321.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec108784321
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec108784321.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtol    CMakeFiles/cmTryCompileExec108784321.dir/CheckFunctionExists.c.o  -o cmTryCompileExec108784321 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strtoull exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1953408269/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1953408269.dir/build.make CMakeFiles/cmTryCompileExec1953408269.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1953408269.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtoull   -o CMakeFiles/cmTryCompileExec1953408269.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1953408269
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1953408269.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtoull    CMakeFiles/cmTryCompileExec1953408269.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1953408269 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function system exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2715128770/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2715128770.dir/build.make CMakeFiles/cmTryCompileExec2715128770.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2715128770.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=system   -o CMakeFiles/cmTryCompileExec2715128770.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2715128770
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2715128770.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=system    CMakeFiles/cmTryCompileExec2715128770.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2715128770 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function tmpnam exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1547299482/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1547299482.dir/build.make CMakeFiles/cmTryCompileExec1547299482.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1547299482.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=tmpnam   -o CMakeFiles/cmTryCompileExec1547299482.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1547299482
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1547299482.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=tmpnam    CMakeFiles/cmTryCompileExec1547299482.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1547299482 -rdynamic 
+CMakeFiles/cmTryCompileExec1547299482.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): warning: the use of `tmpnam' is dangerous, better use `mkstemp'
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function vprintf exists passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec519754035/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec519754035.dir/build.make CMakeFiles/cmTryCompileExec519754035.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec519754035.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=vprintf   -o CMakeFiles/cmTryCompileExec519754035.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘vprintf’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec519754035
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec519754035.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=vprintf    CMakeFiles/cmTryCompileExec519754035.dir/CheckFunctionExists.c.o  -o cmTryCompileExec519754035 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE__BOOL succeded with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec847316669/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec847316669.dir/build.make CMakeFiles/cmTryCompileExec847316669.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec847316669.dir/src.c.o
+/usr/bin/cc   -DHAVE__BOOL   -o CMakeFiles/cmTryCompileExec847316669.dir/src.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec847316669
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec847316669.dir/link.txt --verbose=1
+/usr/bin/cc   -DHAVE__BOOL    CMakeFiles/cmTryCompileExec847316669.dir/src.c.o  -o cmTryCompileExec847316669 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+    #include <stdbool.h>
+    int main(void)
+    {
+        _Bool b;
+        return 0;
+    }
+    
+Determining size of int passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2985530614/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2985530614.dir/build.make CMakeFiles/cmTryCompileExec2985530614.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2985530614.dir/SIZEOF_INT.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2985530614.dir/SIZEOF_INT.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CheckTypeSize/SIZEOF_INT.c
+Linking C executable cmTryCompileExec2985530614
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2985530614.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2985530614.dir/SIZEOF_INT.c.o  -o cmTryCompileExec2985530614 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of long passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3313129123/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3313129123.dir/build.make CMakeFiles/cmTryCompileExec3313129123.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3313129123.dir/SIZEOF_LONG.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3313129123.dir/SIZEOF_LONG.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CheckTypeSize/SIZEOF_LONG.c
+Linking C executable cmTryCompileExec3313129123
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3313129123.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3313129123.dir/SIZEOF_LONG.c.o  -o cmTryCompileExec3313129123 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of long long passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1192483702/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1192483702.dir/build.make CMakeFiles/cmTryCompileExec1192483702.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1192483702.dir/SIZEOF_LONG_LONG.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1192483702.dir/SIZEOF_LONG_LONG.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CheckTypeSize/SIZEOF_LONG_LONG.c
+Linking C executable cmTryCompileExec1192483702
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1192483702.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1192483702.dir/SIZEOF_LONG_LONG.c.o  -o cmTryCompileExec1192483702 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of void * passed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec629001616/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec629001616.dir/build.make CMakeFiles/cmTryCompileExec629001616.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec629001616.dir/SIZEOF_VOID_P.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec629001616.dir/SIZEOF_VOID_P.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CheckTypeSize/SIZEOF_VOID_P.c
+Linking C executable cmTryCompileExec629001616
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec629001616.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec629001616.dir/SIZEOF_VOID_P.c.o  -o cmTryCompileExec629001616 -rdynamic 
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+

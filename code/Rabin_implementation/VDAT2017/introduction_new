@@ -1,0 +1,10 @@
+To explain our problem we are considerig a system consisting of many control
+applications. Each of these control applications is partitioned into a set of
+tasks. Each of these tasks are mapped onto different processors. These tasks 
+of the controllers communicates via shared buses. The tasks on each processors
+are scheduling using a given scheduling policy. The messages on the shared buses
+are also scheduled using a given arbitration policy.
+
+we will use the term platform to refer to such an (i) architecture (ii) the 
+different scheduling and arbitration policies used. 
+

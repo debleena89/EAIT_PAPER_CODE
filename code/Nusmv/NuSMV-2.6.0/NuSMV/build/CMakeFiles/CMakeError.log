@@ -1,0 +1,84 @@
+Determining if the include file ndir.h exists failed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec845412799/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec845412799.dir/build.make CMakeFiles/cmTryCompileExec845412799.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec845412799.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec845412799.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:18: fatal error: ndir.h: No such file or directory
+ #include <ndir.h>
+                  ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec845412799.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec845412799/fast] Error 2
+
+
+Determining if the include file sys/ndir.h exists failed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec237730805/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec237730805.dir/build.make CMakeFiles/cmTryCompileExec237730805.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec237730805.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec237730805.dir/CheckIncludeFile.c.o   -c /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:22: fatal error: sys/ndir.h: No such file or directory
+ #include <sys/ndir.h>
+                      ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec237730805.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec237730805/fast] Error 2
+
+
+Determining if the function floor exists failed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1099171715/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1099171715.dir/build.make CMakeFiles/cmTryCompileExec1099171715.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1099171715.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=floor   -o CMakeFiles/cmTryCompileExec1099171715.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘floor’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec1099171715
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1099171715.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=floor    CMakeFiles/cmTryCompileExec1099171715.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1099171715 -rdynamic 
+CMakeFiles/cmTryCompileExec1099171715.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `floor'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1099171715] Error 1
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1099171715/fast] Error 2
+
+
+Determining if the function pow exists failed with the following output:
+Change Dir: /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4060465693/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4060465693.dir/build.make CMakeFiles/cmTryCompileExec4060465693.dir/build
+make[1]: Entering directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4060465693.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pow   -o CMakeFiles/cmTryCompileExec4060465693.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘pow’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec4060465693
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4060465693.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pow    CMakeFiles/cmTryCompileExec4060465693.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4060465693 -rdynamic 
+CMakeFiles/cmTryCompileExec4060465693.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec4060465693] Error 1
+make[1]: Leaving directory `/home/debleena/Projects/code/Nusmv/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec4060465693/fast] Error 2
+
+

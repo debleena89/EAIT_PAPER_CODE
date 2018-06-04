@@ -1,0 +1,8 @@
+flags: {}
+packages:
+- '.'
+- lib/theory/
+- lib/term/
+- lib/utils/
+extra-deps: []
+resolver: lts-10.0

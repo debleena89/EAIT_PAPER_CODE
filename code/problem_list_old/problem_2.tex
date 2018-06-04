@@ -1,0 +1,56 @@
+
+
+\textbf{Problem 2:}
+
+We may extend the above problem with more general patterns of deadline
+misses. Such patterns may be represented as infinite strings over the alphabet {0, 1},
+such as $111011101110 \dots$, where a $1$ denotes that the corresponding
+message instance meets its deadline constraint and $0$ denotes that the corresponding 
+message instance misses its deadline constraint.
+
+Based on a control-theoretic analysis, we can compute the set of all possible
+such infinite strings which denote deadline miss patterns corresponding to which
+given control performance constraints are satisfied. Let such a set of strings be
+given by the language $L_{controller}$ .
+
+Similarly, given a platform, as in the case of Problem 1, let infinite strings
+over the alphabet ${0, 1}$ denote transmission times of message instances over a
+shared communication bus. Here, again, $1$ denotes that the corresponding message
+instance meets its deadline constraint and $0$ denotes that the corresponding
+message instance misses its deadline constraint. Such strings may be computed
+using standard schedulability analysis techniques or model checking techniques
+that analyze the platform (or scheduling policy) at hand. Let the set of such
+strings be denoted by the language $L_{platform}$ .
+Clearly, if $L_{platform} \subseteq L_{controller}$ then the control performance requirements
+are satisfied when the control application is implemented on the platform in a
+distributed fashion.
+Again, we may ask different questions in this setup.
+
+
+Question (Verification): Given control performence constraints for each 
+controller, and a platform, are all the constraints satisfied?
+
+Question (Synthesis): Given control performence constraints for each controller,
+and a mapping of the control tasks on a distributed architecture, synthesize
+bus or/and processor schedules such that the performence constraints
+are satisfied.
+
+
+\textbf{Motivating Example:}
+Let us consider the motivating example for Problem1. From the diagram, we  are representing
+such valid-invalid sequence into streams of $0$ and $1$ where $1s$ represent valid massage
+and $0s$ represent invalid messages.We considered that an invalid
+message should be followed by atlest $k = 6$ valid messages. Now if we consider a 10
+length timing sample then possible satisfied combinations will be denoted by $L_{controller}
+= \{ 0111111011, 1011111101, 1101111110, 0111111101, 0111111110, 1011111110 \}$. Now if any 10 
+length sequence satisfying the above condition will be any of the above mentioned sequence.
+Any sequence other that this sequence will be vulnerable for the system.
+
+Now from the diagram we can say, that the sequence represented there
+
+
+
+For a infinite sequence, if we can draw the sequence of a particular length and get all of the valid
+combinations, then from a infinite sequence we ca consider a sliding window, and check for satisfiablity.
+If for a particular window, the constraint are not satisfied then from the safety property we can say
+that the full string will be a bad property.

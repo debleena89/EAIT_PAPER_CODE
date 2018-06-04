@@ -1,0 +1,34 @@
+\section{Background} \label{sec2}
+\noindent
+In this section, we present two background concepts that are necessary to establish the foundation of this work. We begin with the  
+B\"{u}chi automaton. \\
+
+\noindent
+\textbf{B\"{u}chi Automaton:}
+A B\"{u}chi automaton~\cite{leeuwen90/Thomas90} is described as a five tuple, 
+$A = (Q,I,\delta,q_0,F)$, where $Q$ is a finite set of states, $I$ is the input alphabet, $\delta : Q$ x $I \rightarrow Q $ is the transition function, $q_0$ 
+is an initial state ($q_0 \in Q$) and $F$ is a set of final states. An infinite word $\delta \in I ^ \omega$ over the input alphabet takes the automaton through an infinite sequence of states $ q_0, q_1, q_2, ....$, which describes a run of
+the automaton such that $ q_{k+1} \in \delta(q_k, \delta_k)$ where $k \in \mathbb{N}$ and $\delta_k$ refers to the $k^{th}$ symbol on the input 
+word $\delta$. An infinite word is accepted if some 
+accepting state $q_f \in F $ appears in the run $ q_0, q_1, q_2, ....$ 
+infinitely often. If 
+$|\delta(q,i)| = 1$ where $ q \in Q $ and $i \in I$, then it is a deterministic 
+B\"{u}chi automaton, otherwise it is non-deterministic. \\
+
+\noindent
+%\textbf{Control model:}
+
+
+\noindent
+%\textbf{Tree Automata:}
+
+
+\noindent
+%\textbf{Rabin's automata:}
+
+
+\noindent
+%\textbf{Rabin's Acceptance condition on tree automata theory:}
+
+
+

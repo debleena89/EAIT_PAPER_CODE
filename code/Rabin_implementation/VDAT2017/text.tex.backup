@@ -1,0 +1,140 @@
+\section{Problem statement and Motivating Example} \label{sec3}
+\noindent
+The motive of our work is to detect code replacement attack. Code replacement attack
+signifies some changes to the system. We are trying to capture the results of the 
+attack from the perspective of scheduling.  Here in this work, we are examining
+how this changes to the system effects the schedulability of the system. 
+
+To explain our problem we are considerig a system consisting of many control
+applications. Each of these control applications is partitioned into a set of
+tasks. Each of these tasks are mapped onto different processors. These tasks 
+of the controllers communicates via shared buses. The tasks on each processors
+are scheduling using a given scheduling policy. The messages on the shared buses
+are also scheduled using a given arbitration policy. When a process is executed by processor
+it goes through a number of states before termination. Among all these states some
+states may require bus access. Those states are allocated to the bus when their term
+comes. 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=3.0in]{system_diagram_3_loop.pdf}
+\end{center}
+\vspace{-0.1in}
+\caption{{\em Control Loops sharing bus}}
+\label{fig:automaton}
+\end{figure}
+
+The diagram depicted in Fig.1 comprising of three control loops $P,Q$ and $R$. 
+Eah control loop has two tasks $T_1$ and $T_2$. From each of these tasks at least one
+state requires bus access. Let us consider $p_0$ and $p_1$ from control application $P$,
+$q_0$ and $q_1$ from control application $Q$ and $r_0$ and $r_1$ from control application
+$R$ are the bus access states. The state diagram representation of these control loops is 
+depicted in Fig. 2.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=3.0in]{state_diagram_task.pdf}
+\end{center}
+\vspace{-0.1in}
+\caption{{\em Automata reprenting Bus accessing states}}
+\label{fig:automaton}
+\end{figure}
+Let us consider another example, where we are considering that at least one state from 
+each control application should share the bus.  As we have stated earlier that we are
+trying to observe the effect 
+of code replacement attack in terms of scheduling sequence, our system will be examinig the
+scheduling sequence after a particular interval of time. Say, our expectation is that at
+every point of time we want to obtain a scheduling sequence where at least one bus accessing 
+state from each control application is present.
+In this work such scheduling expression are represented by $\omega$-regular language. Extraction 
+of such an expression is depicted in Fig. 3.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=3.0in]{state_chage_many.pdf}
+\end{center}
+\vspace{-0.1in}
+\caption{{\em Cycle construction and $\omega$-regular expression extraction}}
+\label{fig:automaton}
+\end{figure}
+From the cycle depicted in Fig.3 we can extract the $\omega$-regular expression 
+$(p_1q_0q_1r_0r_1p_0p_0p_1)^\omega$.
+
+If a code replacement attack take place on this system and one of the 
+control applications has lost the bus access. As a result of this attack no state from
+this finite state machine will take part in bus access that we can capture by checking
+the scheduling sequence. The scheduling sequence will not contain any state of this replaced
+control application as a consequence of the attack. 
+
+Let us consider, control application $P$ got effected due to code replacement attack,
+bus accessing states are not getting the bus access. The $\omega$-regular expression 
+will be :
+
+
+
+
+
+
+The scheduling sequence construct the states for the finite state machine. After adding
+each participating states with the states of finite state machine, we want to get a cycle from
+thses states. After getting the cycles we found that all of the participating states are
+present in the omega regular expression extracted from this cycle.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1.5in]{cycle_1.pdf}
+\end{center}
+\vspace{-0.1in}
+\caption{{\em Cycle construction on FSM }}
+\label{fig:automaton}
+\end{figure}
+
+
+The obtained omega Regular expression from the above transition is $(p_0q_2q_3)^\omega$.
+
+Let us consider that control loop1 is replaced, $q_2$ and $q_3$ are not sharing the bus now.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=3.0in]{diagram_replaced.pdf}
+\end{center}
+\vspace{-0.1in}
+\caption{{\em Control loop 1 got modified }}
+\label{fig:automaton}
+\end{figure}
+
+In the above diagram, $q_2$ and $q_3$ from control loop1 are not sharing the bus, only $p_0$ is 
+sharing the bus from control loop2. The tree automata only for $p_0$  state will look like:
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=5mm]{diagram_single_state.pdf}
+\end{center}
+\vspace{-0.1in}
+\caption{{\em Tree automata for scheduling after control loop 1 got modified }}
+\label{fig:automaton}
+\end{figure}
+
+In the above diagram, $q_2$ and $q_3$ from control loop1 are not sharing the bus, only
+$p_0$ is sharing the bus from control loop2. After constructing the tree automata for
+single state as depicted in Fig.5, we get a single sceduling sequence $p_0p_0p_0$ .
+Only one transition is possible here:
+The omega Regular expression obtained from this transition is $(p_0)^\omega$ . In this
+expression we obtain only a single state $p_0$ , belongs to control loop2. But there
+are no states from control loop1. In this situation we can say that code replacement attack
+has taken place.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1.0in]{one_state.pdf}
+\end{center}
+\vspace{-0.1in}
+\caption{{\em Cycle construction on one state of FSM}}
+\label{fig:automaton}
+\end{figure}
+
+On the other hand, if it would happen 
+that after code replacement attack instead of the earlier state some other state is accessing
+the bus and the earlier ones (those who were accessing the bus before the attack took place)
+lost their bus access then our expectation cannot capture that the attack has taken place.
+

@@ -1,0 +1,21 @@
+\section{Illustrative examples} \label{sec5}
+
+In this section we illustrate our approach considering the example given in Fig.2.
+Three control applications are sharing the bus , only the bus accessing are represented in 
+the diagram. According to the steps given in the solution architecture section we constructed the automaton.
+Here we have 6 states competing for the bus access from three control applications. If we choose the length
+of the control schedule length to be $3$ then we have $6^3 = 216$ number of sequneces. The way the tree can be
+formed is depicted in the Fig.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=20mm]{tree_state.pdf}
+\end{center}
+\vspace{-0.1in}
+\caption{{\em Control Loops sharing bus}}
+\label{fig:automaton}
+\end{figure}
+
+The leaf nodes represents the state for the B\"{u}chi automaton. Each path of the tree 
+represents one possible scheduling sequence. The leaf node represents the sequence when they
+take part in B\"{u}chi automaton construction. 

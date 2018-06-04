@@ -1,0 +1,126 @@
+\section{Problem statement and Motivational example} \label{sec4}
+\noindent
+The control action of a discrete-time \textcolor{red}{switched} linear system can be expressed by 
+a real $n$ x $n$ matrix. Finite set of these transition matrices $ \sum = \{A_i\}_i\in_I,
+|I| < \infty $ model a controller. 
+
+
+Infinite sequence of such transitions, $\sigma = I^\omega$ gives a schedule for
+a control schedule. For a finite $L$ length sequence, $\sigma$ = $\sigma_{1}\ldots \sigma_{L} $
+, $A_{\sigma}$ = $A_{{\sigma}_1}\ldots A_{{\sigma}_L}$ represents a finite length schedule.
+ \textcolor{red}{The dynamics of the above system can be given by \cite{WeissA07},}
+
+\begin{center}
+       \textcolor{red}{ $x_{k+1} = A_{\delta_k}x_k$ }
+\end{center}
+
+\textbf{Formal definition of the problem:}
+
+Let a discrete-time  \textcolor{red}{switched} linear system has $n$ number of controllers and 
+$ A = { {A_1}, {A_2}, ....{A_n}} $ denotes the control actions for each controller.
+A control scheduler can be modeled by infinite sequences of these transition matrices.
+The sequence will be considered as a stable sequence after guaranteeing exponential stability.
+The problem statement can be given formally as below:
+
+\begin{itemize}
+ \item There are $n$ control actions $A_1, A_2, ...A_n$ for $n$ number of controllers.
+ \item For $L$ length scheduling sequence there will be possible $ n^L $ combinations.
+ \item Only exponentially stable sequence will be considered. Exponential stability$(L,\rho)$ 
+       computed for $L$ length sequence.
+ \item To construct a B\"{u}chi automaton with these stable states.   
+\end{itemize}
+
+ \textcolor{red}{\textbf{Conclusion:}not to give it here} 
+       
+       If a B\"{u}chi Automaton cannot be constructed with these stable states, 
+       then it will be concluded that at least one of the control actions has been 
+       attacked, otherwise these stable states would \textcolor{red}{have Resulted} into a B\"{u}chi Automaton
+       which possess at least one cycle over the states.
+
+       The illustration of our problem with a motivating example is given below.
+     
+In this cyber physical system, a control action can be modeled by a real $n$ x $n$ 
+matrix. Possible arrangements of these matrices forming infinite sequences describe
+a particular schedule. Suppose we have a discrete-time switched linear system having
+three control actions ${A_0, A_1, A_2}$ each of $2$ x $2$. Let us consider the length of the 
+sequences for describing a particular schedule is $4$, i.e., $\sigma = { \sigma_1, \sigma_2, 
+\sigma_3, \sigma_4}$. So possible number of schedules for this scenario is $3^4$ = $81$.  
+But all these schedules will not result into an exponentially stable state. From all 
+possible states some states will be filtered out to guarantee exponential stability, 
+say $z$ number of states are stable among these $81$ states. Now, adding all possible
+transitions on these $z$ states will get a finite state machine. If a cycle can be 
+obtained from this state transitions, it will signify that this resulting automaton
+is a B\"{u}chi automaton and the string obtained from the cycle is $\omega$-regular. 
+A schedulable sequences of control actions is a $\omega$-regular string which 
+guarantees that the chosen set of schedules for the control actions.
+
+
+\noindent
+The above idea is captured to detect code replacement attack on such a 
+discrete-time switched linear system. In this work we have tried to illustrate an idea
+that if a control action is hijacked then the system will not remain schedulable, i.e.,  
+the states cannot form B\"{u}chi automata.
+
+let us consider the following three control actions:
+
+   $A_0 = ([2.0, -1.75],[2.0, -2.0])$
+   
+   $A_1 = ([0.25, 1.75],[0.25, -0.25])$
+
+   $A_2 = ([0.5, 1.85],[0.5, -0.5])$
+
+Among the possible $81$ states only $14$ states are stable, and the automaton formed
+with these states contains cycles. That means the control actions are schedulable.
+
+
+%\vspace{-0.1 in}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=90mm, height=20mm]{schedulable_new.pdf}
+\end{center}
+%\vspace{-0.1in}
+\caption{{\em Automaton construction with stable states}}
+\label{fig:cycle found}
+\end{figure}
+
+
+\noindent
+\\Now consider another set of control actions:
+   
+   $A_0 = ([2.0, -1.75],[2.0, -2.0])$
+   
+   $A_1 = ([1.65, -2.5],[1.66, 1.0])$
+
+   $A_2 = ([0.35, 1.85],[0.35, -0.35])$
+   
+%\vspace{-0.1 in}
+\begin{figure}
+
+\begin{center}
+\includegraphics[width=10mm, height = 10mm]{non_schedulable.pdf}
+\end{center}
+%\vspace{-0.1in}
+\caption{{\em  Only one state found}}
+\label{fig:Only one state}
+\end{figure}
+
+   
+      
+Among the possible $81$ states only $1$ state is stable. A cycle cannot be obtained 
+from this state, which results a non-schedulable control actions.
+In the last set, only $A_1$ get changed from the previous set of control actions, other 
+two control actions remains same. We have chosen the exponential stability requirement for this
+$4$ length sequences less than $0.5$.
+
+ \textcolor{red}{W}e can conclude that if a control action gets replaced then the system will not 
+be at all schedulable.
+  
+
+
+% \subsection{Future Scope}
+% \noindent
+% In lieu of the scalability issue with model based assertion verification methods, dynamic assertion based verification techniques are inevitable to follow for software verification sign-off. Hence, we see to extend the proposed frame work to employ a mechanism for the generation of minimal subset of test suites that cover all the user specified assertions and subsequently use this framework to complete the testing process. 
+%\vspace{-0.2 in}
+
+
+

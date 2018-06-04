@@ -1,0 +1,75 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{graphicx}
+\begin{document}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=3.0in]{diagram.pdf}
+\end{center}
+\vspace{-0.1in}
+\caption{{\em Control Loop sharing bus}}
+\label{fig:automaton}
+\end{figure}
+{\textbf {Problem Objective:}} According to our last discussion, I have tried to model the solution in such
+a way so that it can be solved by Rabin's acceptance condition. In case of buchi 
+automata, we have drawn the possible sequence with the control states and selected 
+them who were exponentially stable. But exponential stability can be calculated if
+the states are represented by matrices. Here I have considered automata to represent
+control loops, so we cannot apply exponential stability as an acceptance condition.
+
+To model such a situation, I have used Rabin's tree acceptance condition. How I can
+use it, I have explained later on.
+
+{\textbf{System Description: }}In the above diagram there are two control loops sharing a common bus. From control loop1, 
+$q_2$ and $q_3$ states are sharing the bus and from control loop2 $p_0$
+is also sharing the bus. So these three states are sharing the bus. 
+
+{\textbf{Solution method: }}There are $L^n$ sequences possible for scheduling the bus access with $n$ states.
+Now for 3 length sequence with 3 states the possible combinations are $3^3 = 27$ 
+sequences. The tree automata for the above states can be represented as follows
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=3.5in]{tree_automata.pdf}
+\end{center}
+\vspace{-0.1in}
+\caption{{\em Tree automata for scheduling sequence }}
+\label{fig:automaton}
+\end{figure}
+
+A Rabin automaton on $\sum$-trees is a tuple $A = (Q, qo, \sigma, T)$ where $Q$ is a nonempty finite
+set of states, $q_0 \epsilon Q$ (the initial state), $\sigma \subseteq Q \times \sum \times Q \times Q$
+(the set of transitions), and $T = \{(L1, U1), . . . , (LN, UN)\} $ where $Li, Ui \subseteq Q$
+(the collection of accepting pairs of states).
+
+\noindent
+Now if I define Acceptance condition for the above tree as $T = \{(q_2, q_3), (\phi, p_0)\}$.
+So from the above tree those paths will be accepted which do not have $q_2$. Removing all sequences
+which have $q_2$ as one of their states, we have the remaining sequences  with only states $q_3$ and $p_0$.
+These are:
+
+ $p_0p_0p_0$, $p_0p_0q_3$, $p_0q_3p_0$,  $p_0q_3q_3$,  $q_3p_0p_0$,  $q_3p_0q_3$,  $q_3q_3p_0$, $q_3q_3q_3$
+
+
+With these remaining states, we can construct the state transition table, that we have done earlier,
+will find a cycle, the state alphabets will comprise of these two states.
+
+Now consider that Control loop 1 is got replaced and has now the construct depicted in Fig. 3.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=3.0in]{diagram_replaced.pdf}
+\end{center}
+\vspace{-0.1in}
+\caption{{\em Control Loop sharing bus}}
+\label{fig:automaton}
+\end{figure}
+
+
+In the above diagram, $q_3$ from control loop 1 is not sharing the bus, only $q_2$ is 
+sharing. But now if we draw the tree automata, and tried to apply Rabin's Acceptance
+condition that we have considered, then we will find that only $p_0p_0p_0$ will be 
+the only remaining state. 
+
+
+\end{document}

@@ -1,0 +1,168 @@
+\section{Experiment} \label{sec5}
+\noindent
+To examine the usefulness of our proposed method we have considered some $2$ x $2$
+matrices and constructed their B\"{u}chi automata and replaced one of the control actions
+keeping the other two untouched and again tried to construct corresponding B\"{u}chi
+automata with these new sets but was not able to construct again.
+
+There are three example illustrated below to  \textcolor{red}{demonstrating} our methodology.
+Exponential stability requirement for each of them was less than $0.05$. After 
+obtaining exponentially stable states, the automaton is constructed to test whether 
+a cycle is present after replacement. Each state of the automaton represents only 
+the subscript value of that particulat sequence. Self-loops are not considered as a
+valid cycle. Each of the following test carried out 
+following the algorithm stated earlier.
+
+\noindent
+\textbf{Example1:}
+Cosider the following matrices:
+
+    $A_0 = ([1.05, 1.95], [0.45, -1.45])$    
+    
+    $A_1 = ([0.25, 0.95], [0.25, -0.25])$
+    
+    $A_2 = ([-0.25, 1.45], [1.55, -0.85])$
+
+Exponentially stable states are :
+    
+['$A_0A_1A_1A_1$', '$A_1A_0A_1A_1$', '$A_1A_1A_0A_1$', '$A_1A_1A_1A_0$', '$A_1A_1A_1A_1$', '$A_1A_1A_1A_2$', '$A_1A_2A_1A_1$']
+    
+Fig. 7 shows the corresponding automaton
+ 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=20mm, height=25mm]{graph_ex_1.eps}
+\end{center}
+\caption{{\em Automaton having cycle}}
+\label{fig:control schedule}
+\end{figure}
+The above diagrm show the presence of a cycle, i.e., $0111 \rightarrow 1110 \rightarrow 
+1101 \rightarrow 1011 \rightarrow 0111$. Now consider the following sets of 
+control actions where $A_0$ gets replaced :
+    
+    $A_0 = ([0.22, -1.67], [0.98, -1.77])$
+
+    $A_1 = ([0.25, 0.95], [0.25, -0.25])$
+
+    $A_2 = ([-0.25, 1.45], [1.55, -0.85])$
+    
+    
+Exponentially stable states for these new set of control actions are:
+    
+     
+['$A_0A_1A_1A_1$', '$A_1A_1A_0A_1$', '$A_1A_1A_1A_1$', '$A_1A_1A_1A_2$', '$A_1A_2A_1A_1$']
+
+
+Fig. 8 depicts the corresponding automaton
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=20mm, height=25mm]{graph_ex_1_r.eps}
+\end{center}
+\caption{{\em Automaton not having cycle}}
+\label{fig:control schedule}
+\end{figure}
+
+The above diagram shows that after $A_0$ gets replaced, there is no cycle in the automata.
+The system is no more schedulable.
+
+Similarly the following two example also depicts that.
+    
+\textbf{Example 2:}    
+
+
+Consider another set of matrices:
+    
+    $A_0 = ([1.25, -1.75], [1.08, -1.57])$
+
+    $A_1 = ([0.25, 0.95], [0.25, -0.25])$
+
+    $A_2 = ([-0.25, 1.45], [1.55, -0.85])$
+    
+    
+Exponentially stable states are:
+    
+['$A_0A_0A_0A_0$', '$A_0A_0A_0A_1$', '$A_0A_0A_1A_1$', '$A_0A_0A_2A_0$', '$A_0A_1A_1A_0$', '$A_0A_2A_0A_0$', '$A_0A_2A_0A_1$', '$A_1A_0A_0A_0$', '$A_1A_0A_2A_0$', 
+'$A_1A_1A_0A_0$', '$A_1A_1A_1A_1$', '$A_1A_1A_1A_2$', '$A_1A_2A_1A_1$', '$A_2A_0A_0A_0$', '$A_2A_0A_2A_0$']
+
+Fig. 9 depicts the corresponding automaton   
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=35mm, height=55mm]{graph_ex_2.eps}
+\end{center}
+\caption{{\em Automaton having cycle}}
+\label{fig:control schedule}
+\end{figure}
+
+      
+Now if $A_1$ get replaced:
+      
+   $A_0 = ([1.25, -1.75], [1.08, -1.57])$
+
+   $A_1 = ([1.34, -0.78], [3.0, -1.42])$
+
+    $A_2 = ([-0.25, 1.45], [1.55, -0.85])$
+    
+Exponentially stable states for these new set of control actions are:
+    
+['$A_0A_0A_0A_0$', '$A_0A_0A_1A_1$', '$A_0A_0A_2A_0$', '$A_0A_2A_0A_0$', '$A_0A_2A_0A_1$', '$A_1A_0A_2A_0$', '$A_1A_1A_0A_0$', '$A_1A_1A_1A_1$', 
+'$A_2A_0A_0A_0$', '$A_2A_0A_2A_0$']
+
+Fig. 10 depicts the corresponding automaton     
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=35mm, height=45mm]{graph_ex_2_r.eps}
+\end{center}
+\caption{{\em Automaton not having cycle}}
+\label{fig:control schedule}
+\end{figure}
+
+\textbf{Example 3:}
+
+
+Consider another set of example
+    
+    $A_0 = ([1.45, -1.85], [0.45, -1.45])$
+
+    $A_1 = ([0.25, 0.95], [0.25, -0.25])$
+
+    $A_2 = ([-0.25, 1.45], [0.55, -0.85])$
+    
+Exponentially stable states:
+    
+['$A_1A_1A_1A_1$', '$A_1A_1A_1A_2$', '$A_1A_1A_2A_1$', '$A_1A_2A_1A_1$', '$A_2A_1A_0A_1$', '$A_2A_1A_1A_1$']
+
+Fig. 11 depicts the corresponding automaton
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=25mm, height=35mm]{graph_ex_3.eps}
+\end{center}
+\caption{{\em Automaton having cycle}}
+\label{fig:control schedule}
+\end{figure}
+
+    
+Now if $A_2$ get replaced:
+    
+    $A_0 = ([1.45, -1.85], [0.45, -1.45])$
+
+    $A_1 = ([0.25, 0.95], [0.25, -0.25])$
+
+    $A_2 = ([2.54, -2.6], [2.52, 1.22])$
+
+Exponentially stable states for these new set of control actions are:
+    
+['$A_1A_1A_1A_1$']
+   
+Fig. 12 depicts the corresponding automaton
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=10mm, height=10mm]{graph_ex_3_r.eps}
+\end{center}
+\caption{{\em Automaton not having cycle}}
+\label{fig:control schedule}
+\end{figure}

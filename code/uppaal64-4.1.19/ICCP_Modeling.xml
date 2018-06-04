@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+int clientID;// Tagged, Tag, lastArmID, lastTagID, Timeout,SelectedFlag, Cmd, sBusy, RequestType, numTagSent, id;
+//int SelectSuccess, OperateSuccess, SelectFlag, TagSentLimit, Cmd_t, CmdType;
+//chan Success[2], Failure[2];
+//clock c, Clock;
+
+
+</declaration>
+	<template>
+		<name x="5" y="5">Client</name>
+		<declaration>// Place local declarations here.
+chan Failure[2], end, Success[2], Request, begin;
+int id, numTagSent, RequestType, Tag, TagSentLimit, Cmd, CmdType;
+bool SelectSuccess, SelectedFlag, OperateSuccess, sBusy;
+clock c, Clock;
+</declaration>
+		<location id="id0" x="-220" y="8">
+		</location>
+		<location id="id1" x="-144" y="-255">
+			<name x="-154" y="-289">wait1</name>
+			<label kind="invariant" x="-195" y="-272">c&lt;=1</label>
+		</location>
+		<location id="id2" x="94" y="-255">
+			<name x="84" y="-289">TagSent</name>
+		</location>
+		<location id="id3" x="-144" y="-52">
+			<name x="-127" y="-68">Wait2</name>
+			<label kind="invariant" x="-195" y="-77">c&lt;=1</label>
+		</location>
+		<location id="id4" x="391" y="-145">
+			<name x="408" y="-153">OperateSent</name>
+		</location>
+		<location id="id5" x="94" y="-145">
+			<name x="102" y="-178">Selected</name>
+			<label kind="invariant" x="84" y="-128">c&lt;=1</label>
+		</location>
+		<location id="id6" x="-8" y="-145">
+		</location>
+		<location id="id7" x="-144" y="-145">
+			<name x="-154" y="-179">SelectSent</name>
+		</location>
+		<location id="id8" x="-348" y="-145">
+			<name x="-358" y="-179">start</name>
+			<label kind="invariant" x="-407" y="-170">c&lt;=1</label>
+		</location>
+		<location id="id9" x="-467" y="-145">
+			<name x="-477" y="-179">initial</name>
+		</location>
+		<init ref="id9"/>
+		<transition>
+			<source ref="id8"/>
+			<target ref="id8"/>
+			<label kind="assignment" x="-424" y="-123">c:=0</label>
+			<nail x="-382" y="-263"/>
+			<nail x="-442" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id8"/>
+			<label kind="synchronisation" x="-338" y="-52">Failure[id]?</label>
+			<nail x="94" y="-35"/>
+			<nail x="94" y="-35"/>
+			<nail x="-356" y="-35"/>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id8"/>
+			<label kind="synchronisation" x="-424" y="-60">end!</label>
+			<nail x="-407" y="8"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id0"/>
+			<label kind="synchronisation" x="256" y="-18">Success[id]?</label>
+			<label kind="assignment" x="-202" y="8">OperateSuccess:=true,
+SelectedFlag:=false,
+Clock:=0</label>
+			<nail x="392" y="8"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id8"/>
+			<label kind="guard" x="-483" y="-289">(sBusy or SelectedFlag) and c&gt;=1</label>
+			<label kind="synchronisation" x="-42" y="-357">Failure[id]?</label>
+			<label kind="assignment" x="-25" y="-331">c:=0</label>
+			<nail x="391" y="-323"/>
+			<nail x="391" y="-331"/>
+			<nail x="-356" y="-331"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id5"/>
+			<label kind="guard" x="-254" y="-247">c&gt;=1</label>
+			<label kind="assignment" x="-254" y="-230">numTagSent++,
+c:=0</label>
+			<nail x="-144" y="-204"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+			<label kind="synchronisation" x="-67" y="-238">Failure[id]?</label>
+			<label kind="assignment" x="-67" y="-221">c:=0</label>
+			<nail x="51" y="-221"/>
+			<nail x="-85" y="-221"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+			<label kind="synchronisation" x="-59" y="-280">Success[id]?</label>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id2"/>
+			<label kind="select" x="128" y="-263">TagType:int[0,1]</label>
+			<label kind="guard" x="-50" y="-204">numTagSent&lt;TagSentLimit</label>
+			<label kind="synchronisation" x="128" y="-246">Request!</label>
+			<label kind="assignment" x="196" y="-238">RequestType:=2,
+Tag:=TagType,
+clientID:=id</label>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id8"/>
+			<label kind="guard" x="-262" y="-77">c&gt;=1</label>
+			<nail x="-339" y="-52"/>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id3"/>
+			<label kind="synchronisation" x="-169" y="-111">Failure[id]?</label>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id4"/>
+			<label kind="synchronisation" x="273" y="-136">Request!</label>
+			<label kind="assignment" x="145" y="-111">RequestType:=1,
+Cmd:=CmdType,
+clientID:=id,
+numTagSent:=0,
+SelectSuccess:=false</label>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id5"/>
+			<label kind="synchronisation" x="10" y="-162">begin!</label>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id6"/>
+			<label kind="synchronisation" x="-126" y="-162">Success[id]?</label>
+			<label kind="assignment" x="-84" y="-136">SelectedFlag:=true,
+SelectSuccess:=true,
+Clock:=0</label>
+		</transition>
+		<transition>
+			<source ref="id8"/>
+			<target ref="id7"/>
+			<label kind="guard" x="-347" y="-94">sBusy==0 and !SelectedFlag</label>
+			<label kind="synchronisation" x="-330" y="-162">Request!</label>
+			<label kind="assignment" x="-330" y="-145">RequestType:=0,
+clientID:=id,
+c:=0</label>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id8"/>
+		</transition>
+	</template>
+	<template>
+		<name>Attacker</name>
+		<declaration>
+chan Request, Success[2], Failure[2];
+bool sBusy, SelectedFlag;
+int RequestType, numSelects, Timeout, ReqType, Tag, TagType, id, Cmd, CmdType;
+clock c;</declaration>
+		<location id="id10" x="-221" y="-416">
+			<name x="-231" y="-450">Wait</name>
+			<label kind="invariant" x="-231" y="-399">c&lt;=2</label>
+		</location>
+		<location id="id11" x="357" y="-212">
+			<name x="347" y="-246">FailedOrSucceded</name>
+			<label kind="invariant" x="347" y="-195">c&lt;=2*Timeout</label>
+		</location>
+		<location id="id12" x="85" y="-204">
+			<name x="75" y="-238">RequestSent</name>
+		</location>
+		<location id="id13" x="-221" y="-204">
+			<name x="-231" y="-238">RequestDecided</name>
+		</location>
+		<location id="id14" x="-450" y="-204">
+			<name x="-460" y="-238">Start</name>
+			<label kind="invariant" x="-460" y="-187">c&lt;=1</label>
+		</location>
+		<location id="id15" x="-578" y="-204">
+			<name x="-588" y="-238">Initial</name>
+		</location>
+		<init ref="id15"/>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id14"/>
+			<label kind="guard" x="-612" y="-119">(sBusy or SelectedFlag) and c&gt;=1</label>
+			<label kind="assignment" x="-526" y="-174">c:=0</label>
+			<nail x="-544" y="-144"/>
+			<nail x="-442" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id14"/>
+			<label kind="guard" x="-340" y="-442">c&gt;=2</label>
+			<label kind="assignment" x="-280" y="-442">c:=0</label>
+			<nail x="-501" y="-416"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id10"/>
+			<label kind="guard" x="-255" y="-365">RequestType==0 and numSelects&gt;=2</label>
+			<label kind="assignment" x="-255" y="-340">c:=0</label>
+		</transition>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id14"/>
+			<label kind="guard" x="263" y="-399">c&gt;=Timeout</label>
+			<label kind="assignment" x="357" y="-391">c:=0</label>
+			<nail x="416" y="-212"/>
+			<nail x="416" y="-374"/>
+			<nail x="-450" y="-374"/>
+		</transition>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id11"/>
+			<label kind="guard" x="238" y="-102">RequestType!=0</label>
+			<label kind="synchronisation" x="127" y="-102">Success[id]?</label>
+			<nail x="85" y="-110"/>
+			<nail x="357" y="-110"/>
+		</transition>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id11"/>
+			<label kind="guard" x="272" y="-153">RequestType==0</label>
+			<label kind="synchronisation" x="145" y="-170">Success[id]?</label>
+			<label kind="assignment" x="145" y="-153">SelectedFlag:=true,
+numSelects++</label>
+			<nail x="127" y="-153"/>
+			<nail x="323" y="-153"/>
+		</transition>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id11"/>
+			<label kind="synchronisation" x="195" y="-289">Failure[id]?</label>
+			<nail x="85" y="-272"/>
+			<nail x="357" y="-272"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id12"/>
+			<label kind="guard" x="-408" y="-187">RequestType!=0 || (RequestType==0 and !SelectedFlag and numSelects&lt;2)</label>
+			<label kind="synchronisation" x="-127" y="-221">Request!</label>
+		</transition>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id13"/>
+			<label kind="guard" x="-432" y="-238">sBusy==0</label>
+			<label kind="assignment" x="-357" y="-289">clientID:=id,
+RequestType:=ReqType,
+Cmd:=CmdType,
+Tag:=TagType,
+c:=0</label>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id14"/>
+		</transition>
+	</template>
+	<template>
+		<name>Checker</name>
+		<declaration>chan Request;
+int numSelects[2], attackerID, RequestType;</declaration>
+		<location id="id16" x="110" y="102">
+			<name x="127" y="93">Alarm</name>
+		</location>
+		<location id="id17" x="110" y="-25">
+			<name x="100" y="-59">Check</name>
+		</location>
+		<location id="id18" x="-68" y="-25">
+			<name x="-78" y="-59">UpdateCounters</name>
+		</location>
+		<location id="id19" x="-212" y="-25">
+			<name x="-263" y="-25">Wait</name>
+		</location>
+		<init ref="id19"/>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id19"/>
+			<label kind="guard" x="-194" y="-187">numSelects[attackerID]&lt;2</label>
+			<nail x="110" y="-153"/>
+			<nail x="-212" y="-153"/>
+			<nail x="-212" y="-34"/>
+			<nail x="-212" y="-51"/>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id19"/>
+			<label kind="guard" x="-212" y="-102">clientID!=attackerID</label>
+			<nail x="-93" y="-76"/>
+			<nail x="-187" y="-76"/>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id19"/>
+			<label kind="guard" x="-169" y="-17">RequestType==2</label>
+			<nail x="-93" y="17"/>
+			<nail x="-187" y="17"/>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id19"/>
+			<label kind="guard" x="-194" y="51">RequestType==1</label>
+			<label kind="assignment" x="-194" y="85">numSelects[attackerID]:=0</label>
+			<nail x="-68" y="85"/>
+			<nail x="-212" y="85"/>
+		</transition>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id16"/>
+			<label kind="guard" x="110" y="4">numSelects[attackerID]&gt;=2</label>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id17"/>
+			<label kind="guard" x="-51" y="-42">RequestType==0 and clientID==attackerID</label>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id18"/>
+			<label kind="synchronisation" x="-194" y="-42">Request?</label>
+		</transition>
+	</template>
+	<template>
+		<name>Observer</name>
+		<declaration>chan begin, end;
+clock c;
+int Timeout;</declaration>
+		<location id="id20" x="119" y="-25">
+			<name x="109" y="-59">Unsafe</name>
+		</location>
+		<location id="id21" x="-221" y="-25">
+			<name x="-231" y="-59">Safe</name>
+		</location>
+		<location id="id22" x="-51" y="-127">
+			<name x="-61" y="-161">Wait</name>
+			<label kind="invariant" x="-61" y="-110">c&lt;=Timeout</label>
+		</location>
+		<location id="id23" x="-51" y="-229">
+		</location>
+		<init ref="id23"/>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id20"/>
+			<label kind="guard" x="0" y="-85">c==Timeout</label>
+		</transition>
+		<transition>
+			<source ref="id22"/>
+			<target ref="id21"/>
+			<label kind="synchronisation" x="-203" y="-93">end?</label>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id22"/>
+			<label kind="synchronisation" x="-51" y="-195">begin?</label>
+			<label kind="assignment" x="-51" y="-178">c:=0</label>
+		</transition>
+	</template>
+	<template>
+		<name>Server</name>
+		<declaration>chan Error, Success[2], DevTagged, Armed,Request, Select, SetTag, Failure[2], Operated, Operate;
+int RequestType, sBusy;</declaration>
+		<location id="id24" x="-178" y="-102">
+			<name x="-188" y="-136">OperateRequestSent</name>
+		</location>
+		<location id="id25" x="-561" y="-237">
+			<name x="-571" y="-271">Failed</name>
+		</location>
+		<location id="id26" x="-178" y="-365">
+			<name x="-188" y="-399">TagRequestsent</name>
+		</location>
+		<location id="id27" x="161" y="-237">
+			<name x="151" y="-271">RequestSucceeded</name>
+		</location>
+		<location id="id28" x="8" y="-237">
+			<name x="-2" y="-271">SelectRequestSent</name>
+		</location>
+		<location id="id29" x="-178" y="-237">
+			<name x="-221" y="-263">RequestReceived</name>
+		</location>
+		<location id="id30" x="-357" y="-237">
+			<name x="-367" y="-271">Start</name>
+		</location>
+		<init ref="id30"/>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id25"/>
+			<label kind="synchronisation" x="-425" y="-119">Error?</label>
+			<nail x="-562" y="-94"/>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id27"/>
+			<label kind="synchronisation" x="76" y="-94">Operated?</label>
+			<nail x="161" y="-102"/>
+			<nail x="161" y="-221"/>
+		</transition>
+		<transition>
+			<source ref="id29"/>
+			<target ref="id24"/>
+			<label kind="guard" x="-314" y="-187">RequestType==1</label>
+			<label kind="synchronisation" x="-280" y="-170">Operate!</label>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id30"/>
+			<label kind="synchronisation" x="195" y="-433">Success[clientID]!</label>
+			<label kind="assignment" x="170" y="-450">sBusy:=0</label>
+			<nail x="195" y="-237"/>
+			<nail x="195" y="-237"/>
+			<nail x="195" y="-424"/>
+			<nail x="-357" y="-424"/>
+		</transition>
+		<transition>
+			<source ref="id28"/>
+			<target ref="id25"/>
+			<label kind="synchronisation" x="-526" y="-467">Error?</label>
+			<nail x="8" y="-450"/>
+			<nail x="-544" y="-450"/>
+			<nail x="-544" y="-254"/>
+		</transition>
+		<transition>
+			<source ref="id26"/>
+			<target ref="id27"/>
+			<label kind="synchronisation" x="59" y="-382">DevTagged?</label>
+			<nail x="161" y="-365"/>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id30"/>
+			<label kind="synchronisation" x="-544" y="-221">Failure[clientID]!</label>
+			<label kind="assignment" x="-543" y="-237">sBusy:=0</label>
+		</transition>
+		<transition>
+			<source ref="id26"/>
+			<target ref="id25"/>
+			<label kind="synchronisation" x="-543" y="-382">Error?</label>
+			<nail x="-561" y="-365"/>
+		</transition>
+		<transition>
+			<source ref="id29"/>
+			<target ref="id26"/>
+			<label kind="guard" x="-178" y="-335">RequestType==2</label>
+			<label kind="synchronisation" x="-178" y="-318">SetTag!</label>
+		</transition>
+		<transition>
+			<source ref="id28"/>
+			<target ref="id27"/>
+			<label kind="synchronisation" x="59" y="-255">Armed?</label>
+		</transition>
+		<transition>
+			<source ref="id29"/>
+			<target ref="id28"/>
+			<label kind="guard" x="-153" y="-238">RequestType==0</label>
+			<label kind="synchronisation" x="-153" y="-221">Select!</label>
+		</transition>
+		<transition>
+			<source ref="id30"/>
+			<target ref="id29"/>
+			<label kind="synchronisation" x="-339" y="-254">Request?</label>
+			<label kind="assignment" x="-339" y="-237">sBusy:=1</label>
+		</transition>
+	</template>
+	<template>
+		<name>Device</name>
+		<declaration>chan Operate, SetTag, Error, Select, Operated, DevTagged, Armed;
+int lastArmID, Timeout, Tagged, Tag, Cmd, lastTagID;
+bool SelectedFlag;
+clock c; </declaration>
+		<location id="id31" x="-425" y="-281">
+			<name x="-435" y="-315">Fail3</name>
+		</location>
+		<location id="id32" x="-280" y="-195">
+			<name x="-290" y="-229">Idle</name>
+		</location>
+		<location id="id33" x="187" y="8">
+			<name x="110" y="-35">OpearteOrFail</name>
+		</location>
+		<location id="id34" x="-161" y="144">
+			<name x="-171" y="110">SetTagReceived</name>
+		</location>
+		<location id="id35" x="187" y="-102">
+			<name x="177" y="-136">OperateReceived</name>
+		</location>
+		<location id="id36" x="85" y="-170">
+			<name x="75" y="-204">Fail2</name>
+		</location>
+		<location id="id37" x="8" y="-51">
+			<name x="-2" y="-85">ArmedState</name>
+			<label kind="invariant" x="-2" y="-34">c&lt;Timeout</label>
+		</location>
+		<location id="id38" x="-289" y="8">
+			<name x="-299" y="-26">SelectReceived</name>
+		</location>
+		<location id="id39" x="-425" y="8">
+			<name x="-435" y="-26">OtherTag</name>
+		</location>
+		<location id="id40" x="-637" y="-102">
+			<name x="-647" y="-136">Fail1</name>
+		</location>
+		<location id="id41" x="-629" y="102">
+			<name x="-639" y="68">No_Tag</name>
+		</location>
+		<location id="id42" x="-535" y="8">
+			<name x="-545" y="-26">IdleStart</name>
+		</location>
+		<init ref="id42"/>
+		<transition>
+			<source ref="id37"/>
+			<target ref="id32"/>
+			<label kind="assignment" x="-188" y="-204">lastArmID:=1,
+SelectedFlag:=false</label>
+			<nail x="-60" y="-128"/>
+			<nail x="-60" y="-213"/>
+		</transition>
+		<transition>
+			<source ref="id36"/>
+			<target ref="id37"/>
+			<label kind="guard" x="-25" y="-238">lastArmID==clientID</label>
+			<label kind="synchronisation" x="-25" y="-221">Error!</label>
+			<label kind="assignment" x="-25" y="-204">c:=0</label>
+			<nail x="59" y="-204"/>
+			<nail x="-43" y="-204"/>
+		</transition>
+		<transition>
+			<source ref="id36"/>
+			<target ref="id37"/>
+			<label kind="guard" x="9" y="-204">lastArmID!=clientID</label>
+			<label kind="synchronisation" x="9" y="-187">Error!</label>
+			<nail x="-9" y="-170"/>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id37"/>
+			<label kind="guard" x="-340" y="16">Tagged==0 and lastArmID==clientID</label>
+			<label kind="synchronisation" x="-204" y="42">DevTagged!</label>
+			<label kind="assignment" x="-204" y="59">Tagged:=Tag,
+lastTagID:=clientID</label>
+			<nail x="-162" y="8"/>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id37"/>
+			<label kind="guard" x="-110" y="144">Tagged!=0 and lastTagID==clientID and lastArmID==clientID</label>
+			<label kind="synchronisation" x="-110" y="161">DevTagged!</label>
+			<label kind="assignment" x="-110" y="178">Tagged:=Tag</label>
+			<nail x="-137" y="161"/>
+			<nail x="-128" y="178"/>
+			<nail x="33" y="178"/>
+		</transition>
+		<transition>
+			<source ref="id34"/>
+			<target ref="id37"/>
+			<label kind="guard" x="-111" y="93">(Tagged!=0 and lastTagID!=clientID) or lastArmID!=clientID</label>
+			<label kind="synchronisation" x="-60" y="127">Error!</label>
+			<nail x="-1" y="144"/>
+			<nail x="8" y="-35"/>
+		</transition>
+		<transition>
+			<source ref="id35"/>
+			<target ref="id37"/>
+			<label kind="guard" x="186" y="-86">lastArmID!=clientID</label>
+			<label kind="synchronisation" x="195" y="-69">Error!</label>
+			<nail x="186" y="-43"/>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id38"/>
+			<label kind="synchronisation" x="-284" y="-111">Select?</label>
+		</transition>
+		<transition>
+			<source ref="id31"/>
+			<target ref="id32"/>
+			<label kind="synchronisation" x="-407" y="-233">Error!</label>
+			<nail x="-425" y="-238"/>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id31"/>
+			<label kind="synchronisation" x="-171" y="-264">SetTag?</label>
+			<nail x="-179" y="-230"/>
+			<nail x="-179" y="-289"/>
+		</transition>
+		<transition>
+			<source ref="id32"/>
+			<target ref="id31"/>
+			<label kind="synchronisation" x="-390" y="-315">Operate?</label>
+			<nail x="-281" y="-298"/>
+			<nail x="-408" y="-298"/>
+		</transition>
+		<transition>
+			<source ref="id33"/>
+			<target ref="id37"/>
+			<label kind="guard" x="86" y="-26">Tagged==3|| (Tagged==2 and Cmd==0)</label>
+			<label kind="synchronisation" x="86" y="-9">Error!</label>
+			<nail x="68" y="8"/>
+		</transition>
+		<transition>
+			<source ref="id33"/>
+			<target ref="id32"/>
+			<label kind="guard" x="-281" y="271">Tagged==1 || Tagged==0 || (Tagged==2 and Cmd==1)</label>
+			<label kind="synchronisation" x="-391" y="127">Operated!</label>
+			<label kind="assignment" x="-296" y="229">c:=0,
+SelectedFlag:=false</label>
+			<nail x="187" y="178"/>
+			<nail x="187" y="229"/>
+			<nail x="-314" y="229"/>
+			<nail x="-306" y="-170"/>
+		</transition>
+		<transition>
+			<source ref="id35"/>
+			<target ref="id33"/>
+			<label kind="guard" x="220" y="-43">lastArmID==clientID</label>
+		</transition>
+		<transition>
+			<source ref="id37"/>
+			<target ref="id34"/>
+			<label kind="synchronisation" x="-69" y="-9">SetTag?</label>
+		</transition>
+		<transition>
+			<source ref="id37"/>
+			<target ref="id35"/>
+			<label kind="synchronisation" x="26" y="-94">Operate?</label>
+		</transition>
+		<transition>
+			<source ref="id37"/>
+			<target ref="id36"/>
+			<label kind="synchronisation" x="26" y="-127">Select?</label>
+		</transition>
+		<transition>
+			<source ref="id39"/>
+			<target ref="id40"/>
+			<label kind="synchronisation" x="-628" y="-221">Operate?</label>
+			<nail x="-391" y="-25"/>
+			<nail x="-391" y="-204"/>
+			<nail x="-646" y="-204"/>
+			<nail x="-654" y="-204"/>
+			<nail x="-654" y="-127"/>
+		</transition>
+		<transition>
+			<source ref="id39"/>
+			<target ref="id40"/>
+			<label kind="synchronisation" x="-619" y="-178">SetTag?</label>
+			<nail x="-425" y="-161"/>
+			<nail x="-637" y="-161"/>
+		</transition>
+		<transition>
+			<source ref="id38"/>
+			<target ref="id37"/>
+			<label kind="synchronisation" x="-137" y="-77">Armed!</label>
+			<nail x="-289" y="-51"/>
+		</transition>
+		<transition>
+			<source ref="id41"/>
+			<target ref="id38"/>
+			<label kind="synchronisation" x="-611" y="195">Select?</label>
+			<label kind="assignment" x="-611" y="212">c:=0</label>
+			<nail x="-629" y="212"/>
+			<nail x="-289" y="212"/>
+		</transition>
+		<transition>
+			<source ref="id39"/>
+			<target ref="id38"/>
+			<label kind="synchronisation" x="-407" y="-9">Select?</label>
+			<label kind="assignment" x="-407" y="8">c:=0</label>
+		</transition>
+		<transition>
+			<source ref="id42"/>
+			<target ref="id39"/>
+			<label kind="assignment" x="-517" y="8">Tagged:=1</label>
+		</transition>
+		<transition>
+			<source ref="id40"/>
+			<target ref="id42"/>
+			<label kind="synchronisation" x="-619" y="-119">Error!</label>
+			<nail x="-544" y="-102"/>
+			<nail x="-535" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id41"/>
+			<target ref="id40"/>
+			<label kind="synchronisation" x="-697" y="8">Operate?</label>
+			<nail x="-697" y="76"/>
+			<nail x="-697" y="-76"/>
+		</transition>
+		<transition>
+			<source ref="id41"/>
+			<target ref="id40"/>
+			<label kind="synchronisation" x="-740" y="-128">SetTag?</label>
+			<nail x="-722" y="102"/>
+			<nail x="-722" y="-102"/>
+		</transition>
+		<transition>
+			<source ref="id42"/>
+			<target ref="id41"/>
+			<label kind="assignment" x="-595" y="110">Tagged:=0</label>
+			<nail x="-536" y="101"/>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+//Process = Template();
+// List one or more processes to be composed into a system.
+system Client, Server, Device, Observer, Attacker, Checker;
+    </system>
+	<queries>
+		<query>
+			<formula>A[] Client.Clock&lt;=Limit
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>A[] not Observer.Unsafe
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt; Checker.Alarm
+			</formula>
+			<comment>
+			</comment>
+		</query>
+		<query>
+			<formula>E&lt;&gt; Client.SelectSuccess and Checker.Alarm
+			</formula>
+			<comment>
+			</comment>
+		</query>
+	</queries>
+</nta>
